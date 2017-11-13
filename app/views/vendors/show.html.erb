@@ -1,0 +1,7 @@
+<h1><%= @vendor[:name] %></h1>
+
+<p>Add Sweet:</p>
+<%= form_tag sweets_vendors_path do %>
+  <%= collection_select ("Sweet", @sweets) %>
+  <%= submit_tag "Add" %>
+<% end %>
